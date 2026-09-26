@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALIGN PILATES — 바른 정렬을 만드는 필라테스</title>
+  <meta name="description" content="몸의 정렬을 세심하게 살피고, 편안하고 탄탄한 움직임을 만드는 체형 교정 중심 필라테스.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b3433'/%3E%3Cpath d='M20 46c13-4 22-14 24-28M19 23c9 0 17 8 17 17' fill='none' stroke='%23f3be6f' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#15302f;--deep:#0b3433;--cream:#f5f2e9;--paper:#fffdf7;--sun:#f3be6f;--mint:#b9d6cc;--line:rgba(21,48,47,.15)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans KR",sans-serif;font-size:16px;line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}
+    .topbar{height:34px;background:var(--deep);color:#fff;font-size:.78rem;display:flex;align-items:center;justify-content:center;letter-spacing:.08em}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(245,242,233,.92);position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .brand{font-family:"DM Serif Display",serif;font-size:1.45rem;letter-spacing:.04em}.brand span{color:#d58e31}.links{display:flex;gap:2rem;font-size:.9rem;font-weight:600}.links a:hover{color:#b86e16}
+    .nav-cta,.primary{background:var(--deep);color:#fff;border:0;border-radius:999px;padding:.8rem 1.25rem;font-weight:700;cursor:pointer;transition:.25s}.nav-cta:hover,.primary:hover{transform:translateY(-2px);background:#14504e}
+    .hero{min-height:calc(100vh - 110px);display:grid;grid-template-columns:42% 58%;background:var(--paper);overflow:hidden}
+    .hero-copy{padding:clamp(4rem,8vw,8rem) 4vw 5rem 7vw;display:flex;flex-direction:column;justify-content:center;position:relative}.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#9c671f;margin:0 0 1.5rem}.hero h1{font-family:"DM Serif Display","Noto Sans KR",serif;font-weight:400;font-size:clamp(3.2rem,6vw,6.4rem);line-height:.96;letter-spacing:-.045em;margin:0}.hero h1 em{display:block;color:#c47b22;font-weight:400}.hero .lead{max-width:31rem;margin:2rem 0 2.2rem;color:#506562;font-size:1.06rem}.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap}.secondary{border:1px solid var(--ink);border-radius:999px;padding:.72rem 1.2rem;font-weight:700;background:transparent;cursor:pointer}.secondary:hover{background:#e8eee8}.signature{font-family:"DM Serif Display",serif;font-style:italic;color:#c47b22;margin-top:2.7rem;font-size:1.2rem}
+    .hero-image{position:relative;min-height:650px}.hero-image img{height:100%;width:100%;object-fit:cover;object-position:57% center}.hero-stamp{position:absolute;right:3vw;bottom:3vw;width:126px;height:126px;border-radius:50%;background:var(--sun);display:grid;place-items:center;text-align:center;font-size:.78rem;font-weight:700;line-height:1.45;transform:rotate(-8deg);box-shadow:0 10px 30px rgba(11,52,51,.18)}
+    section{padding:clamp(5rem,9vw,9rem) 7vw}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:4rem}.kicker{color:#b86e16;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.section-head h2{font-family:"DM Serif Display","Noto Sans KR",serif;font-size:clamp(2.4rem,4.6vw,4.9rem);line-height:1.05;margin:.65rem 0 0;font-weight:400;letter-spacing:-.04em}.section-head p{color:#5c6f6d;max-width:34rem;margin:0}
+    .benefits{background:var(--deep);color:#fff}.benefits .section-head p{color:#b9ceca}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.25)}.benefit{padding:2.2rem 2rem 2rem 0;border-right:1px solid rgba(255,255,255,.2);position:relative}.benefit+ .benefit{padding-left:2rem}.benefit:last-child{border-right:0}.num{font-family:"DM Serif Display",serif;color:var(--sun);font-size:1.4rem}.benefit h3{font-size:1.3rem;margin:2rem 0 .7rem}.benefit p{color:#b9ceca;margin:0;font-size:.93rem}
+    .movement{background:var(--paper)}.move-tabs{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2rem}.move-tab{border:1px solid var(--line);border-radius:999px;background:transparent;padding:.7rem 1.15rem;cursor:pointer;font-weight:700;color:var(--ink)}.move-tab[aria-selected="true"]{background:var(--sun);border-color:var(--sun)}
+    .move-stage{display:grid;grid-template-columns:1.05fr .95fr;min-height:430px;border-radius:2rem;overflow:hidden;background:#dce9e4}.move-visual{display:grid;place-items:center;position:relative;padding:3rem}.move-visual svg{width:min(440px,92%);height:auto}.move-copy{background:var(--deep);color:#fff;padding:clamp(3rem,6vw,6rem);display:flex;flex-direction:column;justify-content:center}.move-copy h3{font-family:"DM Serif Display","Noto Sans KR",serif;font-size:2.6rem;margin:0 0 1rem;font-weight:400}.move-copy p{color:#c3d6d2}.cue{border-top:1px solid rgba(255,255,255,.24);padding-top:1.2rem;margin-top:1rem;color:var(--sun);font-weight:700}
+    .history{position:relative;overflow:hidden}.history:before{content:"1920";position:absolute;font-family:"DM Serif Display";font-size:28vw;color:rgba(21,48,47,.045);right:-2vw;top:-7vw;line-height:1}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}.era{background:var(--paper);padding:2rem;border:1px solid var(--line);border-radius:1.2rem;position:relative}.era .year{color:#b86e16;font-family:"DM Serif Display";font-size:2.1rem}.era h3{margin:.8rem 0}.era p{color:#5d706d;font-size:.92rem;margin:0}.source-note{font-size:.78rem;color:#71817f;margin-top:1.5rem}
+    .checkin{background:var(--sun);display:grid;grid-template-columns:.8fr 1.2fr;gap:5vw;align-items:center}.checkin h2{font-family:"DM Serif Display","Noto Sans KR",serif;font-size:clamp(2.6rem,5vw,5rem);line-height:1;margin:.5rem 0 1.4rem;font-weight:400}.concerns{display:grid;gap:.8rem}.concern{width:100%;text-align:left;border:1px solid rgba(21,48,47,.35);background:rgba(255,255,255,.35);border-radius:1rem;padding:1.1rem 1.2rem;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;align-items:center}.concern:hover,.concern.active{background:var(--deep);color:#fff;border-color:var(--deep)}.recommendation{margin-top:1rem;background:var(--paper);padding:1.4rem;border-radius:1rem;min-height:106px}.recommendation strong{display:block;color:#b86e16;margin-bottom:.35rem}
+    .closing{text-align:center;background:var(--paper);padding-bottom:7rem}.closing .mini{color:#b86e16;font-weight:700}.closing h2{font-family:"DM Serif Display","Noto Sans KR",serif;font-size:clamp(3rem,6vw,6.3rem);line-height:1;margin:1rem auto 2rem;max-width:980px;font-weight:400;letter-spacing:-.045em}.closing p{color:#5d706d}.footer{background:var(--deep);color:#fff;padding:2rem 7vw;display:flex;justify-content:space-between;gap:2rem;font-size:.82rem}.footer span:last-child{color:#9fb9b4}
+    .reveal{opacity:0;transform:translateY(20px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:4.5rem 7vw}.hero-image{min-height:58vh;order:-1}.hero-image img{object-position:62% center}.hero-stamp{width:104px;height:104px}.section-head,.move-stage,.checkin{grid-template-columns:1fr}.benefit-grid,.timeline{grid-template-columns:1fr}.benefit,.benefit+ .benefit{padding:1.8rem 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.2)}.era{min-height:auto}.footer{flex-direction:column}.move-visual{min-height:320px}}
+    @media(max-width:540px){.topbar{font-size:.68rem}.nav{height:66px}.nav-cta{font-size:.8rem;padding:.62rem .9rem}.hero h1{font-size:3.4rem}.hero-image{min-height:430px}.section-head{gap:1.5rem;margin-bottom:2.5rem}section{padding-left:5vw;padding-right:5vw}.move-copy{padding:2.4rem 1.5rem}.move-copy h3{font-size:2rem}.closing h2{font-size:3rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar">몸을 바꾸기보다, 몸이 편한 정렬을 찾습니다</div>
+  <nav class="nav" aria-label="주요 메뉴">
+    <a class="brand" href="#top">ALIGN <span>·</span> PILATES</a>
+    <div class="links"><a href="#benefits">체형 교정</a><a href="#movements">기본 동작</a><a href="#history">필라테스 이야기</a></div>
+    <a class="nav-cta" href="#checkin">나에게 맞는 시작</a>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Posture · Balance · Breath</p>
+        <h1>Stand tall.<em>Move softly.</em></h1>
+        <p class="lead">목·어깨의 긴장, 골반의 기울어짐, 흐트러진 중심을 섬세하게 살핍니다. 나를 억지로 바꾸는 운동이 아니라, 본래의 편안한 정렬을 찾아가는 필라테스입니다.</p>
+        <div class="hero-actions"><a class="primary" href="#checkin">내 몸에 맞는 시작 찾기</a><a class="secondary" href="#movements">동작 미리 보기</a></div>
+        <div class="signature">Control begins with awareness.</div>
+      </div>
+      <div class="hero-image"><img src="assets/pilates-hero.png" alt="밝은 스튜디오에서 바른 정렬로 사이드 스트레칭을 하는 필라테스 강사"><div class="hero-stamp">ALIGNMENT<br>FIRST<br>METHOD</div></div>
+    </header>
+
+    <section class="benefits" id="benefits">
+      <div class="section-head reveal"><div><span class="kicker">Why alignment matters</span><h2>모양보다 먼저,<br>움직임의 습관부터.</h2></div><p>체형 교정은 한 자세를 억지로 유지하는 일이 아닙니다. 호흡과 코어, 관절의 움직임을 함께 연습하며 일상에서 반복되는 부담을 줄여가는 과정입니다.</p></div>
+      <div class="benefit-grid reveal">
+        <article class="benefit"><span class="num">01</span><h3>중립 정렬 찾기</h3><p>서고, 앉고, 걷는 순간의 머리·갈비뼈·골반 위치를 관찰해 몸에 맞는 기준점을 찾습니다.</p></article>
+        <article class="benefit"><span class="num">02</span><h3>깊은 코어 깨우기</h3><p>힘으로 버티기보다 호흡과 함께 몸통 안정근을 연결해 허리와 어깨의 불필요한 긴장을 덜어냅니다.</p></article>
+        <article class="benefit"><span class="num">03</span><h3>일상으로 이어가기</h3><p>수업에서 찾은 감각을 업무 자세, 보행, 운동 습관에 이어갈 수 있도록 쉬운 큐를 익힙니다.</p></article>
+      </div>
+    </section>
+
+    <section class="movement" id="movements">
+      <div class="section-head reveal"><div><span class="kicker">Start with the basics</span><h2>작아 보여도<br>분명한 움직임</h2></div><p>빠르고 큰 동작보다 정확하고 편안한 범위가 먼저입니다. 아래 기본 동작을 눌러 핵심 포인트를 확인해 보세요.</p></div>
+      <div class="move-tabs" role="tablist" aria-label="필라테스 기본 동작">
+        <button class="move-tab" role="tab" aria-selected="true" data-move="breath">흉곽 호흡</button><button class="move-tab" role="tab" aria-selected="false" data-move="bridge">숄더 브리지</button><button class="move-tab" role="tab" aria-selected="false" data-move="spine">스파인 스트레치</button>
+      </div>
+      <div class="move-stage reveal">
+        <div class="move-visual" aria-hidden="true">
+          <svg viewBox="0 0 520 360" fill="none"><ellipse cx="260" cy="315" rx="190" ry="18" fill="#c5d8d1"/><circle cx="260" cy="72" r="28" fill="#f3be6f"/><path id="figure" d="M260 104 C252 155 250 206 260 280 M258 155 C210 170 180 205 160 245 M258 155 C308 170 340 205 360 245 M260 278 C225 290 205 302 178 310 M260 278 C295 290 315 302 342 310" stroke="#0b3433" stroke-width="18" stroke-linecap="round"/><path d="M220 145 C240 130 280 130 300 145" stroke="#fffdf7" stroke-width="4" stroke-linecap="round" opacity=".9"/><circle cx="260" cy="172" r="54" stroke="#f3be6f" stroke-width="3" stroke-dasharray="7 8"/></svg>
+        </div>
+        <div class="move-copy" aria-live="polite"><span class="kicker">Foundation 01</span><h3 id="move-title">흉곽 호흡</h3><p id="move-desc">코로 숨을 들이마시며 갈비뼈가 옆과 뒤로 넓어지는 감각을 찾고, 길게 내쉬며 아랫배가 부드럽게 연결되는 것을 느껴보세요.</p><div class="cue" id="move-cue">POINT · 어깨가 들리지 않도록 목을 길게</div></div>
+      </div>
+    </section>
+
+    <section class="history" id="history">
+      <div class="section-head reveal"><div><span class="kicker">A brief history</span><h2>회복에서 시작된<br>움직임의 철학</h2></div><p>필라테스는 단순한 유행 운동이 아니라 몸과 마음의 통합을 지향해 발전한 움직임 체계입니다.</p></div>
+      <div class="timeline reveal">
+        <article class="era"><div class="year">1910s</div><h3>‘컨트롤로지’의 씨앗</h3><p>조셉 필라테스는 제1차 세계대전 전후 자신의 운동법을 발전시켰습니다. 호흡, 집중, 통제를 핵심에 두었습니다.</p></article>
+        <article class="era"><div class="year">1926</div><h3>뉴욕 스튜디오</h3><p>조셉과 클라라 필라테스는 뉴욕에 스튜디오를 열었고, 무용수와 공연 예술가들의 컨디셔닝과 회복에 널리 활용되었습니다.</p></article>
+        <article class="era"><div class="year">Today</div><h3>모두를 위한 움직임</h3><p>오늘날 필라테스는 매트와 기구 수업으로 확장되어, 체력과 경험에 맞춰 조절 가능한 전신 운동으로 사랑받고 있습니다.</p></article>
+      </div>
+      <p class="source-note">* 필라테스의 역사를 이해하기 위한 간략한 소개입니다.</p>
+    </section>
+
+    <section class="checkin" id="checkin">
+      <div class="reveal"><span class="kicker">Quick body check-in</span><h2>지금 가장<br>신경 쓰이는 곳은?</h2><p>하나를 골라 첫 수업에서 집중해 볼 움직임을 확인해 보세요. 통증이 있다면 운동 전에 의료 전문가와 상담하세요.</p></div>
+      <div class="reveal"><div class="concerns"><button class="concern" data-result="neck">목과 어깨가 자주 뻐근해요 <span>＋</span></button><button class="concern" data-result="pelvis">골반이 한쪽으로 기우는 느낌이에요 <span>＋</span></button><button class="concern" data-result="back">오래 앉으면 허리가 불편해요 <span>＋</span></button></div><div class="recommendation" id="recommendation"><strong>나의 시작점</strong>가장 신경 쓰이는 곳을 선택해 주세요.</div></div>
+    </section>
+
+    <section class="closing"><span class="mini">MOVE BETTER, FEEL LIGHTER</span><h2>몸이 편안해지는 순간,<br>움직임은 더 아름다워집니다.</h2><p>완벽한 자세보다 오늘의 몸을 알아차리는 것부터 시작해 보세요.</p><a class="primary" href="#top" style="display:inline-block;margin-top:1rem">처음부터 둘러보기</a></section>
+  </main>
+  <footer class="footer"><span class="brand">ALIGN · PILATES</span><span>본 사이트의 운동 정보는 일반적인 안내이며 개인별 진단이나 치료를 대신하지 않습니다.</span></footer>
+  <script>
+    const moves={breath:{n:'Foundation 01',title:'흉곽 호흡',desc:'코로 숨을 들이마시며 갈비뼈가 옆과 뒤로 넓어지는 감각을 찾고, 길게 내쉬며 아랫배가 부드럽게 연결되는 것을 느껴보세요.',cue:'POINT · 어깨가 들리지 않도록 목을 길게'},bridge:{n:'Foundation 02',title:'숄더 브리지',desc:'발로 바닥을 밀며 꼬리뼈부터 척추를 한 마디씩 들어 올립니다. 골반을 높이 올리기보다 양쪽 무릎과 골반이 나란한지 살펴보세요.',cue:'POINT · 허리를 꺾지 말고 둔근과 뒷다리로 지지'},spine:{n:'Foundation 03',title:'스파인 스트레치',desc:'좌골로 바닥을 누르고 앉아 정수리는 위로, 두 팔은 앞으로 뻗습니다. 내쉬는 숨에 머리부터 등을 길게 둥글려 척추 사이 공간을 만듭니다.',cue:'POINT · 어깨를 내리고 배꼽은 등 쪽으로 부드럽게'}};
+    document.querySelectorAll('.move-tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.move-tab').forEach(b=>b.setAttribute('aria-selected','false'));btn.setAttribute('aria-selected','true');const m=moves[btn.dataset.move];document.querySelector('.move-copy .kicker').textContent=m.n;document.querySelector('#move-title').textContent=m.title;document.querySelector('#move-desc').textContent=m.desc;document.querySelector('#move-cue').textContent=m.cue;}));
+    const results={neck:'흉곽 호흡과 견갑 안정화부터 시작해 보세요. 갈비뼈의 움직임이 편안해지면 목과 어깨가 대신 일하는 패턴을 줄이는 데 도움이 됩니다.',pelvis:'브리지와 한쪽씩 움직이는 풋워크가 좋은 출발점입니다. 양쪽 발의 지지와 골반 높이를 비교하며 중심을 찾아갑니다.',back:'호흡을 곁들인 골반 시계와 가벼운 스파인 스트레치로 시작해 보세요. 통증 없는 범위에서 척추의 움직임을 회복합니다.'};
+    document.querySelectorAll('.concern').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.concern').forEach(b=>{b.classList.remove('active');b.querySelector('span').textContent='＋'});btn.classList.add('active');btn.querySelector('span').textContent='✓';document.querySelector('#recommendation').innerHTML='<strong>추천 시작점</strong>'+results[btn.dataset.result];}));
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
